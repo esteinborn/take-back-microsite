@@ -1,0 +1,149 @@
+---
+version: 2
+
+references:
+
+# DIRECTORIES
+  app_root: &app_root
+    /home/circleci/take-back-day-microsite
+
+  build_path: &build_path
+    /home/circleci/take-back-day-microsite/build
+
+# CONFIG
+  build_config: &build_config
+    docker:
+      - image: node:8
+    working_directory: *app_root
+
+  deploy_config: &deploy_config
+    docker:
+      - image: noxan/docker-node-awscli-yarn:latest
+    working_directory: *app_root
+
+# CACHING
+  attach_workspace: &attach_workspace
+    attach_workspace:
+      at: *app_root
+
+  yarn_cache_key: &yarn_cache_key
+    v1-yarn-{{ checksum "yarn.lock" }}
+
+# ONLY MASTER
+  filters: &only_master
+    branches:
+      only: master
+
+  filters: &release
+    tags:
+      only: /v\d+\.\d+.\d+-release/
+    branches:
+      ignore: /.*/
+
+jobs:
+
+  create_workspace:
+    <<: *build_config
+    steps:
+      - checkout
+      - restore_cache:
+          key: *yarn_cache_key
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - save_cache:
+          key: *yarn_cache_key
+          paths:
+            - node_modules
+      - persist_to_workspace:
+          root: *app_root
+          paths:
+            - .
+
+  test_unit:
+    <<: *build_config
+    steps:
+      - *attach_workspace
+      - run:
+          name: Unit Tests
+          command: yarn test
+
+  build_app:
+    <<: *build_config
+    steps:
+      - *attach_workspace
+      - run:
+          name: Build App
+          working_directory: *app_root
+          command: yarn build
+          environment:
+      - persist_to_workspace:
+          root: *app_root
+          paths:
+            - build
+
+  deploy_staging:
+    <<: *deploy_config
+    steps:
+      - *attach_workspace
+      - run:
+          name: Deploy App to Statging S3
+          working_directory: *app_root
+          environment:
+            BUCKET_NAME: <S3_STAGING_BUCKET_NAME>
+            BUILD_DIRECTORY: build_path
+          command: ./scripts/s3Sync.sh
+
+  deploy_prod:
+    <<: *deploy_config
+    steps:
+      - *attach_workspace
+      - run:
+          name: Deploy App to Prod S3
+          working_directory: *app_root
+          environment:
+            BUCKET_NAME: <S3_PROD_BUCKET_NAME>
+            BUILD_DIRECTORY: build_path
+          command: ./scripts/s3Sync.sh
+
+workflows:
+  version: 2
+
+  test_pull_request:
+    jobs:
+      - create_workspace:
+          filters:
+            branches:
+              ignore: master
+      - test_unit:
+          requires:
+            - create_workspace
+      - build_app:
+          requires:
+            - create_workspace
+
+  deploy_staging:
+    jobs:
+      - create_workspace:
+          filters: *release
+
+      - build_app:
+          filters: *release
+          requires:
+            - create_workspace
+
+      - deploy_staging:
+          filters: *release
+          requires:
+            - build_app
+
+      - hold:
+          filters: *release
+          type: approval
+          requires:
+           - deploy_staging
+
+      - deploy_prod:
+          filters: *release
+          requires:
+            - hold
