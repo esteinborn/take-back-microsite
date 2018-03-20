@@ -18,4 +18,4 @@ You can find the most recent version of the create react app guide [here](https:
 - The app is built to be easily deployed via cdn.
 - If you push a branch to github, netlify will build you a branch preview (look for the netlify integration on a pull request)
 - When you merge to master, netlify builds to the dev server (https://take-back-day.netlify.com/)
-- For more info about deployment, look in the deploy readme.
+- For more info about deployment, look in the [deploy readme](https://github.com/cgalbiati/take-back-day-microsite/blob/master/Deploy.md).
