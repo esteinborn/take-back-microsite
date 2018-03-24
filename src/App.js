@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Nav, Header } from './layout/index'
+import * as TakeBackMapComponent from 'take-back-map'
 
 class App extends Component {
   render() {
@@ -8,16 +9,10 @@ class App extends Component {
       <div className="App">
         <Nav />
         <Header />
-        <MapPlaceholder />
+        <TakeBackMapComponent />
       </div>
     );
   }
 }
-
-const MapPlaceholder = () => (
-  <div style={{height: '500px', textAlign: 'center', backgroundColor: '#ededed'}}>
-    Map goes here
-  </div>
-);
 
 export default App;
