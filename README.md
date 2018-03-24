@@ -20,13 +20,9 @@ You can find the most recent version of the create react app guide [here](https:
 - When you merge to master, netlify builds to the dev server (https://take-back-day.netlify.com/)
 - For more info about deployment, look in the [deploy readme](https://github.com/cgalbiati/take-back-day-microsite/blob/master/Deploy.md).
 
-## Submodules
-This app contains a map app as a submodule.  FOr more information about using submodules, check out https://git-scm.com/book/en/v2/Git-Tools-Submodules
-
-- Init: after cloning, you must init the submodule by running `git submodule init`
-- To update the submodule with the current develop branch of the map project, you can run `git submodule update`
-- You also must install the submodules dependencies to run the app `cd src/take-back-day-mapping && yarn`
-- After running that, be aware that you are now in the submodule's directory
+## Updating the Map
+- This app imports the map from another repo (https://github.com/ProgressiveHackNight/take-back-day-mapping) by installing directly from git (https://stackoverflow.com/questions/23210437/npm-install-private-github-repositories-by-dependency-in-package-json)
+- To update the map, you must follow instructions in the map repo for updating, then grab the commit hash for your updated verion, and replace the hash in the package.json of this app that specifies which commit-ish to install (everything after the #)
 
 ## Resources
 
