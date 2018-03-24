@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import TakeBackMapComponent from './take-back-day-mapping/src/TakeBackMapComponent';
 import { Nav, Header } from './layout/index'
 
 class App extends Component {
@@ -8,16 +9,10 @@ class App extends Component {
       <div className="App">
         <Nav />
         <Header />
-        <MapPlaceholder />
+        <TakeBackMapComponent />
       </div>
     );
   }
 }
-
-const MapPlaceholder = () => (
-  <div style={{height: '500px', textAlign: 'center', backgroundColor: '#ededed'}}>
-    Map goes here
-  </div>
-);
 
 export default App;
