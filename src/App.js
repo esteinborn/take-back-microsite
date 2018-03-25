@@ -1,15 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Nav, Header } from './layout/index'
+import { Nav, Header, SectionBlock } from './layout'
 import * as TakeBackMapComponent from 'take-back-map'
+import About from './About';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
-      <div className="App">
+      <div className="App" id='app'>
         <Nav />
-        <Header />
-        <TakeBackMapComponent />
+        <SectionBlock name='top'>
+          <Header />
+        </SectionBlock>
+        <SectionBlock name='map'>
+          <TakeBackMapComponent />
+        </SectionBlock>
+        <SectionBlock name='about'>
+          <About />
+        </SectionBlock>
       </div>
     );
   }

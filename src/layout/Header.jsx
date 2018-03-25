@@ -1,22 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import { headerCopy } from '../copy';
+import { fontStyles } from '../styleGuide/text';
 
 const Header = () => (
   <Container>
-    <Title>Take Back Day is <Date>April 28th</Date></Title>
-    <Description>{descrText}</Description>
+    <Title>{headerCopy.title}</Title>
+    <Description>{headerCopy.description}</Description>
   </Container>
 );
 
-const descrText = 'takeback takeback takeback takeback takeback takeback takeback takeback takeback takeback takeback';
-
 const Title = styled.div`
+  ${fontStyles}
   text-align: center;
   font-size: 2em;
-`;
-
-const Date = styled.span`
-  font-weight: 500;
 `;
 
 const Description = styled.div`
@@ -25,6 +22,7 @@ const Description = styled.div`
 
 const Container = styled.div`
   padding: 20px;
+  margin-top: 50px;
 `;
 
 export default Header;
