@@ -5,13 +5,15 @@ You can find the most recent version of the create react app guide [here](https:
 ## Setup
 
 - Install brew
+
 - Install yarn (run `brew install yarn`)
 - Clone the repo
 - Install dependencies (run `yarn`)
 
 ## Run the app locally
 
-- Run `yarn start`
+- Just the front end: run `yarn start`
+- From the server: run `yarn server'
 
 ## Deploy the app
 
