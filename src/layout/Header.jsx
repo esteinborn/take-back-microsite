@@ -1,28 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import { headerCopy } from '../copy';
-import { fontStyles } from '../styleGuide/text';
+import { SectionTitle, SectionDescription, SectionContainer } from '../styleGuide';
 
 const Header = () => (
-  <Container>
-    <Title>{headerCopy.title}</Title>
-    <Description>{headerCopy.description}</Description>
-  </Container>
+  <SectionContainer>
+    <SectionTitle>{headerCopy.title}</SectionTitle>
+    <SectionDescription>{headerCopy.description}</SectionDescription>
+  </SectionContainer>
 );
-
-const Title = styled.div`
-  ${fontStyles}
-  text-align: center;
-  font-size: 2em;
-`;
-
-const Description = styled.div`
-  font-size: .8em;
-`;
-
-const Container = styled.div`
-  padding: 20px;
-  margin-top: 50px;
-`;
 
 export default Header;

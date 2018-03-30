@@ -1,39 +1,52 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-import { fontStyles } from '../styleGuide';
+import { fontStyles, hover, lightGray, media } from '../styleGuide';
 
 const links = [
   ['Find a Location', 'map'],
   ['Texting Service', 'text'],
-  ['FAQ', 'FAQ'],
+  ['FAQ', 'faq'],
   ['Toolkit', 'toolkit'],
   ['About', 'about'],
 ];
 
 const Nav = () => (
   <Container>
-    {links.map(([title, name]) => (
-      <NavLink
-        to={name}
-        spy={true}
-        smooth={true}
-        hashSpy={true}
-        offset={50}
-        duration={500}
-        isDynamic={true}
-        key={name}
-      >
-        {title}
-     </NavLink>
-    ))}
+    {links.map(([title, name]) => (<NavLink name={name} title={title}/>))}
   </Container>
 );
 
-const NavLink = styled(Link)`
+export const SectionLink = ({ name, title, ...props }) => (
+  <Link
+    to={name}
+    spy={true}
+    smooth={true}
+    hashSpy={true}
+    offset={-60}
+    duration={500}
+    isDynamic={true}
+    key={name}
+    {...props}
+  >
+    {title}
+  </Link>
+);
+
+const NavLink = styled(SectionLink)`
   ${fontStyles}
   font-weight: 500;
-  padding: 15px;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+  ${hover`
+    background-color: ${lightGray};
+  `}
+  ${media.desktop`
+    padding: 15px;
+    font-size: 24px;
+  `}
+  
 `;
 
 
@@ -47,7 +60,7 @@ const Container = styled.div`
   width: 100%;
   top: 0;
   z-index: 10;
-  height: 50px;
+  height: 60px;
 `;
 
 export default Nav;

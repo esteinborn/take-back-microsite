@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import './App.css';
 import { Nav, Header, SectionBlock } from './layout'
 import * as TakeBackMapComponent from 'take-back-map'
 import About from './About';
+import Faq from './Faq';
+import Footer from './Footer';
 
 class App extends Component {
 
@@ -14,18 +17,28 @@ class App extends Component {
     return (
       <div className="App" id='app'>
         <Nav />
-        <SectionBlock name='top'>
-          <Header />
-        </SectionBlock>
-        <SectionBlock name='map'>
-          <TakeBackMapComponent />
-        </SectionBlock>
-        <SectionBlock name='about'>
-          <About />
-        </SectionBlock>
+        <Content>
+          <SectionBlock name='top'>
+            <Header />
+          </SectionBlock>
+          <SectionBlock name='map'>
+            <TakeBackMapComponent />
+          </SectionBlock>
+          <SectionBlock name='faq'>
+            <Faq />
+          </SectionBlock>
+          <SectionBlock name='about'>
+            <About />
+          </SectionBlock>
+        </Content>
+        <Footer />
       </div>
     );
   }
 }
+
+const Content = styled.div`
+  margin-top: 50px;
+`;
 
 export default App;

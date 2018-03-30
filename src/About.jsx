@@ -1,17 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import { aboutCopy } from './copy';
-import { SectionDescription, SectionTitle } from './styleGuide';
+import { SectionDescription, SectionTitle, SectionContainer } from './styleGuide';
 
 const About = () => (
-  <Container>
+  <SectionContainer>
     <SectionTitle>{aboutCopy.title}</SectionTitle>
     <SectionDescription>{aboutCopy.description}</SectionDescription>
-  </Container>
+  </SectionContainer>
 );
-
-const Container = styled.div`
-  padding: 150px;
-`;
 
 export default About;
