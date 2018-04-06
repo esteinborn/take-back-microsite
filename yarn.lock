@@ -6058,7 +6058,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -6252,6 +6252,10 @@ react-event-listener@^0.5.1:
     fbjs "^0.8.16"
     prop-types "^15.6.0"
     warning "^3.0.0"
+
+react-input-mask@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/react-input-mask/-/react-input-mask-1.2.2.tgz#225a1130d316ee54cea7431f004c738b4c41b4da"
 
 react-jss@^8.1.0:
   version "8.3.5"
@@ -7348,16 +7352,18 @@ table@^4.0.1:
     slice-ansi "1.0.0"
     string-width "^2.1.1"
 
-"take-back-map@git://github.com/ProgressiveHackNight/take-back-day-mapping#86e092b9512c579311d51bce9aa20f3a56ccc4d1":
+"take-back-map@git://github.com/ProgressiveHackNight/take-back-day-mapping#e62b21891236407dcfdf401e7fec2a958d775b96":
   version "0.1.0"
-  resolved "git://github.com/ProgressiveHackNight/take-back-day-mapping#86e092b9512c579311d51bce9aa20f3a56ccc4d1"
+  resolved "git://github.com/ProgressiveHackNight/take-back-day-mapping#e62b21891236407dcfdf401e7fec2a958d775b96"
   dependencies:
     firebase "^4.11.0"
     google-map-react "^0.32.0"
     material-ui "^0.20.0"
+    prop-types "^15.6.1"
     react "^16.2.0"
     react-controllables "^0.6.0"
     react-dom "^16.2.0"
+    react-input-mask "^1.2.2"
     react-pure-render "^1.0.2"
     react-redux "^5.0.7"
     react-scripts "^1.1.1"
