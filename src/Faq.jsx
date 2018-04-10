@@ -15,7 +15,6 @@ import {
 const Faq = () => (
   <SectionContainer>
     <SectionTitle>{faqCopy.title}</SectionTitle>
-    <SectionDescription>{faqCopy.description}</SectionDescription>
     <AccordionContainer>
       {faqCopy.faqs.map(faq => <Accordion {...faq} />)}
     </AccordionContainer>
@@ -25,7 +24,7 @@ const Faq = () => (
 const Accordion = props => (
   <ExpansionPanel>
     <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-      <div>{props.question}</div>
+      <SectionDescription>{props.question}</SectionDescription>
     </ExpansionPanelSummary>
     <ExpansionPanelDetails>
       <SectionDescription>{props.answer}</SectionDescription>
