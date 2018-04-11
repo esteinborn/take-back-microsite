@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-import { fontStyles, hover, lightGray, media } from '../styleGuide';
+import { fontStyles, hover, lightLightGray, media } from '../styleGuide';
 
 const links = [
   ['Find a Location', 'map'],
@@ -40,7 +40,7 @@ const NavLink = styled(SectionLink)`
   padding: 5px;
   cursor: pointer;
   ${hover`
-    background-color: ${lightGray};
+    background-color: ${lightLightGray};
   `}
   ${media.desktop`
     padding: 15px;

@@ -32,7 +32,12 @@ export const reminderCopy = {
 export const aboutCopy = {
   link: ['Find A Location', 'Find', 'map'],
   title: 'About Take Back Day',
-  description: placeholderDescr,
+  description: 'The National Prescription Drug Take Back Day addresses a crucial public safety and public health ' +
+  'issue. According to the 2015 National Survey on Drug Use and Health, 6.4 million Americans abused controlled ' +
+  'prescription drugs. The study shows that a majority of abused prescription drugs were obtained from family and ' +
+  'friends, often from the home medicine cabinet.\n' +
+  '\n' +
+  'Take Back Day events provide an opportunity for Americans to prevent drug addiction and overdose deaths.',
 };
 
 export const faqCopy = {
@@ -70,6 +75,12 @@ export const faqCopy = {
       'locator before you head out, and confirming their availability and hours.',
     },
   ],
+};
+
+export const resourceCopy = {
+  link: ['Tookkit', 'Toolkit', 'toolkit'],
+  title: 'Resources',
+  description: 'Help spread the word - get the flyer',
 };
 
 export const footerCopy = {

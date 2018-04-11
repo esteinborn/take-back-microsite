@@ -5,6 +5,7 @@ import { Nav, Header, SectionBlock } from './layout'
 import * as TakeBackMapComponent from 'take-back-map'
 import About from './About';
 import Faq from './Faq';
+import Resources from './Resources';
 import Footer from './Footer';
 
 class App extends Component {
@@ -26,6 +27,9 @@ class App extends Component {
           </SectionBlock>
           <SectionBlock name='faq'>
             <Faq />
+          </SectionBlock>
+          <SectionBlock name='toolkit'>
+            <Resources />
           </SectionBlock>
           <SectionBlock name='about'>
             <About />
