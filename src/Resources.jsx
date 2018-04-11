@@ -7,7 +7,7 @@ const Resources = () => (
   <Container>
     <SectionTitle>{resourceCopy.title}</SectionTitle>
     <SectionDescription>{resourceCopy.description}</SectionDescription>
-    <Button href="clear_your_cabinet_flyer.pdf" target="__blank" rel="noopener">Download</Button>
+    <Button href="/clear_your_cabinet_flyer.pdf" target="__blank" rel="noopener">Download</Button>
   </Container>
 );
 
