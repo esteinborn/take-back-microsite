@@ -13,10 +13,11 @@ const Resources = () => (
 
 const Button = styled.a`
   ${ctaButton}
-  padding: 10px;
-  margin-top: 10px;
+  padding: 8px 15px;
+  margin-top: 30px;
   display: inline-block;
   text-decoration: none;
+  height: 100%;
 `;
 
 const Container = SectionContainer.extend`

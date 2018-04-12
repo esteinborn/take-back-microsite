@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { media } from './helpers';
 
 export const SectionContainer = styled.div`
   min-height: 400px;
@@ -8,4 +9,9 @@ export const SectionContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  padding: 20px 10px;
+  ${media.tablet`
+    min-height: 600px;
+    padding: 50px 30px;
+  `}
 `;
