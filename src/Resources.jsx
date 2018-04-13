@@ -1,14 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { resourceCopy } from './copy';
-import { SectionDescription, SectionTitle, SectionContainer, ctaButton, lightLightGray } from './styleGuide';
+import { SectionDescription, SectionTitle, SectionContainerGray, ctaButton } from './styleGuide';
 
 const Resources = () => (
-  <Container>
+  <SectionContainerGray>
     <SectionTitle>{resourceCopy.title}</SectionTitle>
     <SectionDescription>{resourceCopy.description}</SectionDescription>
-    <Button href="/clear_your_cabinet_flyer.pdf" target="__blank" rel="noopener">Download</Button>
-  </Container>
+    <Button href={process.env.PUBLIC_URL + "/clear_your_cabinet_flyer.pdf"} target="__blank" rel="noopener">
+      Download
+    </Button>
+  </SectionContainerGray>
 );
 
 const Button = styled.a`
@@ -18,10 +20,6 @@ const Button = styled.a`
   display: inline-block;
   text-decoration: none;
   height: 100%;
-`;
-
-const Container = SectionContainer.extend`
-  background-color: ${lightLightGray};
 `;
 
 export default Resources;

@@ -6,6 +6,7 @@ import * as TakeBackMapComponent from 'take-back-map'
 import About from './About';
 import Faq from './Faq';
 import Resources from './Resources';
+import NYCAG from './NYAG';
 import Footer from './Footer';
 
 class App extends Component {
@@ -33,6 +34,9 @@ class App extends Component {
           </SectionBlock>
           <SectionBlock name='about'>
             <About />
+          </SectionBlock>
+          <SectionBlock name='nyag'>
+            <NYCAG />
           </SectionBlock>
         </Content>
         <Footer />

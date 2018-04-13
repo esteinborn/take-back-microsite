@@ -8,12 +8,13 @@ const links = [
   ['Texting Service', 'text'],
   ['FAQ', 'faq'],
   ['Toolkit', 'toolkit'],
-  ['About', 'about'],
+  ['About the Opioid Crisis', 'about'],
+  ['An Initiative of NY AG Schneiderman', 'nyag'],
 ];
 
 const Nav = () => (
   <Container>
-    {links.map(([title, name]) => (<NavLink name={name} title={title}/>))}
+    {links.map(([title, name]) => (<NavLink name={name} title={title} key={name} />))}
   </Container>
 );
 
@@ -36,7 +37,7 @@ export const SectionLink = ({ name, title, ...props }) => (
 const NavLink = styled(SectionLink)`
   ${fontStyles}
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   padding: 5px;
   cursor: pointer;
   ${hover`
@@ -44,7 +45,7 @@ const NavLink = styled(SectionLink)`
   `}
   ${media.desktop`
     padding: 15px;
-    font-size: 24px;
+    font-size: 18px;
   `}
   
 `;
@@ -54,7 +55,7 @@ const NavLink = styled(SectionLink)`
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid ${lightLightGray};
   position: fixed;
   background-color: white;
   width: 100%;

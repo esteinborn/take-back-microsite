@@ -7,17 +7,27 @@ import { footerCopy } from './copy';
 const Footer = () => (
   <Container>
     <Item><SectionLink title={footerCopy.home[0]} name={footerCopy.home[1]}/></Item>
+    <Item><Link href="https://ag.ny.gov/contact-attorney-general">Contact</Link></Item>
+    <Item>This website was made possible through a collaboration with dedicated volunteers from New York’s tech community, Progressive Hacknight, and Civic Hall.</Item>
   </Container>
 );
 
 const Item = styled(SectionDescription)`
+  color: white;
+  padding: 5px;
+`;
+
+const Link = styled.a`
+  text-decoration: none;
   color: white;
 `;
 
 const Container = styled(SectionContainer)`
   background-color: ${darkGray};
   height: 300px;
-  text-align: left
+  min-height: 300px;
+  text-align: left;
+  align-items: left;
 `;
 
 export default Footer;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { fontColor } from "./colors";
-import { media } from "./helpers";
+import { darkBlue, fontColor, orange } from "./colors";
+import { hover, media } from "./helpers";
 
 export const fontFamily = "Avenir, Roboto, Open Sans, Arial, sans-serif";
 
@@ -30,4 +30,12 @@ export const SectionDescription = styled.div`
     line-height: 33px;
     margin-top: 20px;
   `};
+`;
+
+export const Link = styled.a`
+  color: ${darkBlue};
+  text-decoration: none;
+  ${hover`
+    color: ${orange};
+  `}
 `;

@@ -11,37 +11,31 @@ const links = [
   ['About', 'about'],
 ];
 export const headerCopy = {
-  linkText: ['', '', 'top'],
   tagLine: 'Get rid of your unused medication. Stop addiction. Protect clean water. End the opioid crisis.',
   title: 'Take Back Day is April 28th',
   description: 'Ready to help out? Search below to find a safe place to get rid of unused medication near you.',
 };
 
 const mapCopy = {
-  link: ['Find A Location', 'Find', 'map'],
   description: 'Find my nearest drop-off location',
-};
-
-export const reminderCopy = {
-  link: ['Get a Reminder', 'Reminder', 'text'],
-  title: 'Get a Reminder',
-  description: 'Sign up to get a text or email reminder with your nearest medication drop-off location before ' +
-  'the next National Prescription Drug Take Back Day.',
 };
 
 export const aboutCopy = {
   link: ['Find A Location', 'Find', 'map'],
-  title: 'About Take Back Day',
-  description: 'The National Prescription Drug Take Back Day addresses a crucial public safety and public health ' +
-  'issue. According to the 2015 National Survey on Drug Use and Health, 6.4 million Americans abused controlled ' +
-  'prescription drugs. The study shows that a majority of abused prescription drugs were obtained from family and ' +
-  'friends, often from the home medicine cabinet.\n' +
+  title: 'About The Opioid Crisis',
+  description: 'The opioid crisis is the deadliest drug overdose crisis in American history. Today in the United ' +
+  'States, more people are killed by drug overdoses than by car crashes. Drug overdoses are the leading cause of ' +
+  'death for Americans under 50. And in some states hardest-hit by the crisis, there are more prescriptions than there ' +
+  'are residents. Families across New York have been devastated as their loved ones struggle with addiction. It is ' +
+  'essential that we do everything possible to prevent future addictions in addition to combatting the opioid crisis ' +
+  'today.\n' +
   '\n' +
-  'Take Back Day events provide an opportunity for Americans to prevent drug addiction and overdose deaths.',
-};
+  'This is why the small step you can take by bringing your unused prescription drugs to a nearby drop-off site is an ' +
+  'incredibly important part of the public health efforts to turn the opioid crisis around. More than 42,000 pounds of ' +
+  'unused medication were collected in New York State during the last National Prescription Drug Take Back Day. We ' +
+  'need your help to keep the progress going and spread the word.'};
 
 export const faqCopy = {
-  link: ['FAQ', 'FAQ', 'faq'],
   title: 'Frequently Asked Questions',
   description: placeholderDescr,
   faqs: [
@@ -78,9 +72,16 @@ export const faqCopy = {
 };
 
 export const resourceCopy = {
-  link: ['Tookkit', 'Toolkit', 'toolkit'],
   title: 'Resources',
   description: 'Help spread the word - get the flyer',
+};
+
+export const NYAGCopy = {
+  title: 'An Initiative of New York Attorney General Eric Schneiderman',
+  description: 'Clear Your Cabinet is the latest initiative of New York Attorney General Eric Schneiderman’s ' +
+  'comprehensive campaign to address the opioid crisis. Some of the Attorney General’s most significant drug addiction ' +
+  'and treatment achievements on behalf of New Yorkers include:',
+  // bullets have links - copy is hardcoded in component
 };
 
 export const footerCopy = {
