@@ -12,7 +12,7 @@
     "recompose": "^0.26.0",
     "styled-components": "^3.2.3",
     "take-back-map":
-      "git://github.com/ProgressiveHackNight/take-back-day-mapping#4cbfe8940514adfc57ba55c781c3f8370d718327"
+      "git://github.com/ProgressiveHackNight/take-back-day-mapping#35927c3a776f7ae3384f0e4829fba173f4c7c0d9"
   },
   "devDependencies": {
     "react-scripts": "1.1.1"
