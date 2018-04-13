@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import { fontStyles, hover, lightLightGray, media } from '../styleGuide';
+import heroImage from '../assets/hero-image.png';
 
 const links = [
   ['Find a Location', 'map'],
@@ -14,8 +15,13 @@ const links = [
 
 const Nav = () => (
   <Container>
+    <NavLink name='top' title={<LogoLink />} key='top' style={{ padding: 0, margin: '0 5px' }}/>
     {links.map(([title, name]) => (<NavLink name={name} title={title} key={name} />))}
   </Container>
+);
+
+const LogoLink = () => (
+  <img src={heroImage} width="115px" />
 );
 
 export const SectionLink = ({ name, title, ...props }) => (
