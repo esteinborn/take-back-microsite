@@ -21,7 +21,7 @@ export const SectionTitle = styled.div`
   `};
 `;
 
-export const SectionDescription = styled.div`
+export const SectionDescription = styled.p`
   ${fontStyles} font-size: 18px;
   line-height: 25px;
   margin-top: 20px;
