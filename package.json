@@ -21,8 +21,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "buildToServe": "REACT_APP_API_ENV=server react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "serve": "yarn build && node server"
+    "serve": "yarn buildToServe && node server"
   }
 }
