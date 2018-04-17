@@ -29,9 +29,9 @@ class App extends Component {
           <SectionBlock name='faq'>
             <Faq />
           </SectionBlock>
-          <SectionBlock name='toolkit'>
+          {/* <SectionBlock name='toolkit'>
             <Resources />
-          </SectionBlock>
+          </SectionBlock> */}
           <SectionBlock name='about'>
             <About />
           </SectionBlock>

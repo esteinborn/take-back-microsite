@@ -17,6 +17,10 @@ export const SectionContainer = styled.div`
   `}
 `;
 
+export const SectionContainerConstrain = styled.div`
+  max-width: 1000px;
+`;
+
 export const SectionContainerGray = SectionContainer.extend`
   background-color: ${lightLightGray};
 `;

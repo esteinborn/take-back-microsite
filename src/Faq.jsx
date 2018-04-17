@@ -10,14 +10,17 @@ import {
   SectionDescription,
   SectionTitle,
   SectionContainer,
+  SectionContainerConstrain,
 } from "./styleGuide";
 
 const Faq = () => (
   <SectionContainer>
-    <SectionTitle>{faqCopy.title}</SectionTitle>
-    <AccordionContainer>
-      {faqCopy.faqs.map(faq => <Accordion {...faq} />)}
-    </AccordionContainer>
+    <SectionContainerConstrain>
+      <SectionTitle>{faqCopy.title}</SectionTitle>
+      <AccordionContainer>
+        {faqCopy.faqs.map(faq => <Accordion {...faq} />)}
+      </AccordionContainer>
+    </SectionContainerConstrain>
   </SectionContainer>
 );
 

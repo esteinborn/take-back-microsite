@@ -6,9 +6,9 @@ import heroImage from '../assets/hero-image.png';
 
 const links = [
   ['Find a Location', 'map'],
-  ['Texting Service', 'text'],
+  ['Get a Reminder', 'text'],
   ['FAQ', 'faq'],
-  ['Toolkit', 'toolkit'],
+  // ['Toolkit', 'toolkit'],
   ['About the Opioid Crisis', 'about'],
   ['An Initiative of NY AG Schneiderman', 'nyag'],
 ];

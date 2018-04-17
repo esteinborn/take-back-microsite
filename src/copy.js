@@ -23,17 +23,11 @@ const mapCopy = {
 export const aboutCopy = {
   link: ['Find A Location', 'Find', 'map'],
   title: 'About The Opioid Crisis',
-  description: 'The opioid crisis is the deadliest drug overdose crisis in American history. Today in the United ' +
-  'States, more people are killed by drug overdoses than by car crashes. Drug overdoses are the leading cause of ' +
-  'death for Americans under 50. And in some states hardest-hit by the crisis, there are more prescriptions than there ' +
-  'are residents. Families across New York have been devastated as their loved ones struggle with addiction. It is ' +
-  'essential that we do everything possible to prevent future addictions in addition to combatting the opioid crisis ' +
-  'today.\n' +
-  '\n' +
-  'This is why the small step you can take by bringing your unused prescription drugs to a nearby drop-off site is an ' +
-  'incredibly important part of the public health efforts to turn the opioid crisis around. More than 42,000 pounds of ' +
-  'unused medication were collected in New York State during the last National Prescription Drug Take Back Day. We ' +
-  'need your help to keep the progress going and spread the word.'};
+  description1: 'The opioid crisis is the deadliest drug overdose crisis in American history.',
+  description2: 'Today in the United States, more people are killed by drug overdoses than by car crashes. Drug overdoses are the leading cause of death for Americans under 50. And in some states hardest-hit by the crisis, there are more prescriptions than there are residents. Families across New York have been devastated as their loved ones struggle with addiction.',
+  description3: 'It is essential that we do everything possible to prevent future addictions in addition to combatting the opioid crisis today. This is why the small step you can take by bringing your unused prescription drugs to a nearby drop-off site is an incredibly important part of the public health efforts to turn the opioid crisis around.',
+  description4: 'More than 42,000 pounds of unused medication were collected in New York State during the last National Prescription Drug Take Back Day. We need your help to keep the progress going and spread the word.'
+};
 
 export const faqCopy = {
   title: 'Frequently Asked Questions',
@@ -77,7 +71,8 @@ export const resourceCopy = {
 };
 
 export const NYAGCopy = {
-  title: 'An Initiative of New York Attorney General Eric Schneiderman',
+  title1: 'An Initiative of',
+  title2: 'New York Attorney General Eric Schneiderman',
   description: 'Clear Your Cabinet is the latest initiative of New York Attorney General Eric Schneiderman’s ' +
   'comprehensive campaign to address the opioid crisis. Some of the Attorney General’s most significant drug addiction ' +
   'and treatment achievements on behalf of New Yorkers include:',
