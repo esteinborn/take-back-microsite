@@ -1,18 +1,32 @@
 const express = require('express');
 const path = require('path');
+const bodyParser = require('body-parser')
+const firebaseApi = require('./firebase');
 
 const app = express();
 const port = process.env.PORT || 5000;
 const HOST = '0.0.0.0';
 
+// Middleware
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(bodyParser.json());
+
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, '../build')));
 
 // API routes go here
-app.get('/api/hello', (req, res) => {
-  res.send({ express: 'Hello From Express' });
+app.post('/api/add_reminder', (req, res) => {
+  try {
+    firebaseApi.handleAddReminder(req.body);
+    res.status(200).send('ok');
+  } catch (e) {
+    res.status(500).send('Error adding reminder');
+  }
 });
 
+// Default sends index
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });
