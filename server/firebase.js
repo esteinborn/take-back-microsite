@@ -12,7 +12,7 @@ const config = {
 firebase.initializeApp(config);
 
 const emailDatabase = firebase.database().ref('emailReminders');
-const textDatabase = firebase.database().ref('emailReminders');
+const textDatabase = firebase.database().ref('phoneReminders');
 
 const handleAddReminder = ({ reminder, type }) => {
   if (type === 'email') {
