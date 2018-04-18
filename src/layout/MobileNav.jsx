@@ -94,7 +94,7 @@ class MobileNav extends React.Component {
           PaperProps={{
             style: {
               maxHeight: ITEM_HEIGHT * 4.5,
-              width: 200,
+              // width: 200,
             },
           }}
         >
