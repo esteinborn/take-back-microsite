@@ -19,7 +19,7 @@ const Nav = () => (
       name="top"
       title={<LogoLink />}
       key="top"
-      style={{ padding: 0, margin: "0 5px" }}
+      style={{ margin: "0 5px" }}
     />
     {links.map(([title, name]) => (
       <NavLink name={name} title={title} key={name} />
@@ -27,7 +27,7 @@ const Nav = () => (
   </Container>
 );
 
-const LogoLink = () => <img src={heroImage} width="115px" />;
+const LogoLink = () => <img src={heroImage} width="115px" style={{ display: "block" }} />;
 
 export const SectionLink = ({ name, title, ...props }) => (
   <Link
