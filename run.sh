@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "===> Building ..."
-yarn build
+yarn buildToServe
 
 echo "===> Starting Server ..."
 node server
