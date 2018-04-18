@@ -1,11 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
-import { headerCopy } from '../copy';
-import { SectionTitle, SectionDescription, SectionContainerGray } from '../styleGuide';
-import heroImage from '../assets/hero-image.png'
+import React from "react";
+import styled from "styled-components";
+import { headerCopy } from "../copy";
+import {
+  SectionTitle,
+  SectionDescription,
+  SectionContainerGray,
+} from "../styleGuide";
+import heroImage from "../assets/hero-image.png";
 
 const Header = () => (
-  <SectionContainerGray>
+  <SectionContainerGray className="top-section">
     <SectionTitle>{headerCopy.title}</SectionTitle>
     <Image src={heroImage} />
     <SectionDescription>{headerCopy.description}</SectionDescription>

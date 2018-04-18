@@ -7385,9 +7385,9 @@ table@^4.0.1:
     slice-ansi "1.0.0"
     string-width "^2.1.1"
 
-"take-back-map@git://github.com/ProgressiveHackNight/take-back-day-mapping#3aaa839237e2f7036d97bdd9a1b7a420cd62cf18":
+"take-back-map@git://github.com/ProgressiveHackNight/take-back-day-mapping#bc709b43e38ae6d3286e4e070d11f87fb0648010":
   version "0.1.0"
-  resolved "git://github.com/ProgressiveHackNight/take-back-day-mapping#3aaa839237e2f7036d97bdd9a1b7a420cd62cf18"
+  resolved "git://github.com/ProgressiveHackNight/take-back-day-mapping#bc709b43e38ae6d3286e4e070d11f87fb0648010"
   dependencies:
     firebase "^4.11.0"
     google-map-react "^0.32.0"
