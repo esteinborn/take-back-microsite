@@ -1,26 +1,24 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 import "./App.css";
 import { Nav, MobileNav, Header, SectionBlock } from "./layout";
 import * as TakeBackMapComponent from "take-back-map";
 import About from "./About";
 import Faq from "./Faq";
-import Resources from "./Resources";
 import NYCAG from "./NYAG";
 import Footer from "./Footer";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     return (
-      <div className="App" id="app">
+      <div className="App" id="app" name="top">
         <Nav />
         <MobileNav />
         <div>
-          <SectionBlock name="top">
+          <SectionBlock>
             <Header />
           </SectionBlock>
           <SectionBlock name="map">

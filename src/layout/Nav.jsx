@@ -27,7 +27,7 @@ const Nav = () => (
   </Container>
 );
 
-const LogoLink = () => <img src={heroImage} width="115px" style={{ display: "block" }} />;
+const LogoLink = () => <img src={heroImage} width="115px" alt="Clear Your Cabinet" style={{ display: "block" }} />;
 
 export const SectionLink = ({ name, title, ...props }) => (
   <Link

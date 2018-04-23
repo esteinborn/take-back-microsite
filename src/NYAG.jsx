@@ -6,9 +6,6 @@ import {
   SectionTitle,
   SectionContainer,
   SectionContainerConstrain,
-  darkGray,
-  hover,
-  ctaGreen,
   Link,
 } from './styleGuide';
 import nyag from './assets/nyag.jpg';
