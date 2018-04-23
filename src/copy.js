@@ -3,22 +3,23 @@ const placeholderDescr = 'Description goes here: takeback takeback takeback take
   ' takeback takeback takeback takeback takeback takeback takeback takeback takeback takeback takeback' +
   ' takeback takeback takeback takeback takeback takeback takeback takeback takeback takeback takeback takeback ';
 
-const links = [
-  ['Find a Location', 'map'],
-  ['Texting Service', 'text'],
-  ['FAQ', 'faq'],
-  ['Toolkit', 'toolkit'],
-  ['About', 'about'],
-];
+// const links = [
+//   ['Find a Location', 'map'],
+//   ['Texting Service', 'text'],
+//   ['FAQ', 'faq'],
+//   ['Toolkit', 'toolkit'],
+//   ['About', 'about'],
+// ];
+
 export const headerCopy = {
   tagLine: 'Get rid of your unused medication. Stop addiction. Protect clean water. End the opioid crisis.',
   title: 'Take Back Day is April 28th',
   description: 'Ready to help out? Search below to find a safe place to get rid of unused medication near you.',
 };
 
-const mapCopy = {
-  description: 'Find my nearest drop-off location',
-};
+// const mapCopy = {
+//   description: 'Find my nearest drop-off location',
+// };
 
 export const aboutCopy = {
   link: ['Find A Location', 'Find', 'map'],

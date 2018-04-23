@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { css } from "styled-components";
 import { darkBlue, fontColor, orange } from "./colors";
 import { hover, media } from "./helpers";
