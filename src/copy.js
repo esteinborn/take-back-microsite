@@ -36,32 +36,45 @@ export const faqCopy = {
   faqs: [
     {
       question: 'What is Clear Your Cabinet?',
-      answer: 'Clear Your Cabinet is an initiative by New York Attorney General Eric Schneiderman to reduce the ' +
-      'amount of unused prescription drugs in New Yorkers’ medicine cabinets. This is a crucial way that we can ' +
-      'all help to fight the opioid crisis that is devastating families across New York and our country. Research ' +
-      'shows that a majority of abused prescription drugs are obtained from family and friends, and the source is ' +
-      'often from medication that was prescribed but never finished and left to sit at home.',
+      answer: [
+        'Clear Your Cabinet is an initiative by New York Attorney General Eric Schneiderman to reduce the ' +
+        'amount of unused prescription drugs in New Yorkers’ medicine cabinets. This is a crucial way that we can ' +
+        'all help to fight the opioid crisis that is devastating families across New York and our country.',
+        'Research shows that a majority of abused prescription drugs are obtained from family and friends, and the source is ' +
+        'often from medication that was prescribed but never finished and left to sit at home.',
+        'This site was built through a collaboration with volunteers from some of New York’s leading tech startups, beginning with a hackathon on the opioid crisis hosted by the Attorney General’s office in March 2018. Special thanks to Progressive Hacknight and Civic Hall for their assistance.',
+      ],
     },
     {
       question: 'So there are designated sites across New York where I can bring my unused medication?',
-      answer: 'Yes. New York State, the federal government, national and community pharmacies, and non-profits ' +
-      'across New York have responded to our national opioid crisis by setting up safe drop-off sites for New ' +
-      'Yorkers to bring unused medication. We have worked to combine all the available sources of information about ' +
-      'where you can find these drop-off sites into the site locator above.',
+      answer: [
+        'Yes.',
+        'New York State, the federal government, national and community pharmacies, and non-profits ' +
+        'across New York have responded to our national opioid crisis by setting up safe drop-off sites for New ' +
+        'Yorkers to bring unused medication. We have worked to combine all the available sources of information about ' +
+        'where you can find these drop-off sites into the site locator above.',
+      ],
     },
     {
       question: 'Will I get in trouble for dropping off prescription drugs and unused over-the-counter medication?',
-      answer: 'No. If you bring in your medication, you’re fine.',
+      answer: [
+        'No. If you bring in your medication, you’re fine.',
+      ],
     },
     {
       question: 'Is there a charge for disposing my medications?',
-      answer: 'No, the service is free.',
+      answer: [
+        'No, the service is free.',
+      ],
     },
     {
       question: 'Do these sites collect medication year-round?',
-      answer: 'Many sites are year-round, but some are only for a short period of time during National Prescription ' +
-      'Drug Take Back Day, a twice-yearly effort coordinated by the DEA. We recommend calling sites found on the ' +
-      'locator before you head out, and confirming their availability and hours.',
+      answer: [
+        'Many sites are year-round, but some are only for a short period of time during National Prescription ' +
+        'Drug Take Back Day, a twice-yearly effort coordinated by the DEA.',
+        'We recommend calling sites found on the ' +
+        'locator before you head out, and confirming their availability and hours.',
+      ],
     },
   ],
 };

@@ -13,6 +13,16 @@ import {
   SectionContainerConstrain,
 } from "./styleGuide";
 
+const descriptionStyle = {
+  flexDirection: "column",
+};
+
+const generateDescription = answer => {
+  return answer.map(section => {
+    return <SectionDescription>{section}</SectionDescription>;
+  });
+};
+
 const Faq = () => (
   <SectionContainer>
     <SectionContainerConstrain>
@@ -29,8 +39,8 @@ const Accordion = props => (
     <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
       <SectionDescription>{props.question}</SectionDescription>
     </ExpansionPanelSummary>
-    <ExpansionPanelDetails>
-      <SectionDescription>{props.answer}</SectionDescription>
+    <ExpansionPanelDetails style={descriptionStyle}>
+      {generateDescription(props.answer)}
     </ExpansionPanelDetails>
   </ExpansionPanel>
 );
