@@ -15,6 +15,7 @@ export const headerCopy = {
   tagLine: 'Get rid of your unused medication. Stop addiction. Protect clean water. End the opioid crisis.',
   title: 'Take Back Day is April 28th',
   description: 'Ready to help out? Search below to find a safe place to get rid of unused medication near you.',
+  description2: 'Click on any site that pops up in your search results to move the map.',
 };
 
 // const mapCopy = {
@@ -88,8 +89,7 @@ export const NYAGCopy = {
   title1: 'An Initiative of',
   title2: 'New York Attorney General Eric Schneiderman',
   description: 'Clear Your Cabinet is the latest initiative of New York Attorney General Eric Schneiderman’s ' +
-  'comprehensive campaign to address the opioid crisis. Some of the Attorney General’s most significant drug addiction ' +
-  'and treatment achievements on behalf of New Yorkers include:',
+  'comprehensive campaign to address the opioid crisis. Some of the Attorney General’s most significant achievements on behalf of New Yorkers include:',
   // bullets have links - copy is hardcoded in component
 };
 
