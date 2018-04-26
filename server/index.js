@@ -1,5 +1,4 @@
 const express = require('express');
-const basicAuth = require('express-basic-auth');
 const path = require('path');
 const bodyParser = require('body-parser')
 const firebaseApi = require('./firebase');
@@ -7,11 +6,6 @@ const firebaseApi = require('./firebase');
 const app = express();
 const port = process.env.PORT || 5000;
 const HOST = '0.0.0.0';
-
-app.use(basicAuth({
-  users: { 'oag-admin': 'work42matters' },
-  challenge: true,
-}));
 
 // Middleware
 app.use(bodyParser.urlencoded({
