@@ -25,6 +25,7 @@ const Header = () => (
     <div className="sub-title">The next National Prescription Drug Take Back Day is on April 28th</div>
     <Image src={heroImage} />
     <SectionDescription>{headerCopy.description}</SectionDescription>
+    <SectionDescription>{headerCopy.description2}</SectionDescription>
   </SectionContainerGray>
 );
 
