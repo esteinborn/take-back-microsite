@@ -8,7 +8,7 @@ const Footer = () => (
   <Container>
     <Item><SectionLink title={footerCopy.home[0]} name={footerCopy.home[1]}/></Item>
     <Item><Link href="https://ag.ny.gov/contact-attorney-general">Contact</Link></Item>
-    <Item>This website was made possible through a collaboration with dedicated volunteers from New York’s tech community, Progressive Hacknight, and Civic Hall.</Item>
+    <Item>This website was made possible through a collaboration with dedicated volunteers from New York’s tech community, <FooterLink href="https://www.progressivehacknight.org/">Progressive Hacknight</FooterLink>, and <FooterLink href="https://civichall.org/">Civic Hall</FooterLink>.</Item>
   </Container>
 );
 
@@ -21,6 +21,10 @@ const Link = styled.a`
   text-decoration: none;
   color: white;
 `;
+
+const FooterLink = Link.extend`
+  text-decoration: underline;
+`
 
 const Container = styled(SectionContainer)`
   background-color: ${darkGray};

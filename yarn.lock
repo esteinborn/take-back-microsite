@@ -8140,9 +8140,9 @@ table@^4.0.1:
     slice-ansi "1.0.0"
     string-width "^2.1.1"
 
-"take-back-map@git://github.com/ProgressiveHackNight/take-back-day-mapping#06c45e2df23fade8d0df37f2012a04393b8fb1f1":
+"take-back-map@git://github.com/ProgressiveHackNight/take-back-day-mapping#82bf75c263b21052c88e2fcd841185394bcc35e4":
   version "0.1.0"
-  resolved "git://github.com/ProgressiveHackNight/take-back-day-mapping#06c45e2df23fade8d0df37f2012a04393b8fb1f1"
+  resolved "git://github.com/ProgressiveHackNight/take-back-day-mapping#82bf75c263b21052c88e2fcd841185394bcc35e4"
   dependencies:
     axios "^0.18.0"
     firebase "^4.11.0"
