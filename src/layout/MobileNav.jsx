@@ -47,9 +47,9 @@ import { Link } from "react-scroll";
 
 const options = [
   { text: "Find a Location", link: "map" },
-  { text: "Texting Service", link: "text" },
+  { text: "Get a Reminder", link: "text" },
   { text: "FAQ", link: "faq" },
-  { text: "Toolkit", link: "toolkit" },
+  // { text: "Toolkit", link: "toolkit" },
   { text: "About the Opioid Crisis", link: "about" },
   { text: "An Initiative of NY AG Schneiderman", link: "nyag" },
 ];

@@ -80,6 +80,18 @@ ul li {
     top: -120px;
   }
 }
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .rotating-section {
+    font-size: 24px;
+  }
+  .sub-title {
+    font-size: 20px;
+  }
+}
 
 @media screen and (min-width: 765px) {
   #nav {
