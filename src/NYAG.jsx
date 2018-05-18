@@ -14,7 +14,6 @@ const NYAG = () => (
   <SectionContainer>
     <SectionContainerConstrain>
       <SectionTitle>{NYAGCopy.title1} <br /> {NYAGCopy.title2}</SectionTitle>
-      <Image src={nyag} />
       <SectionDescription>
         {NYAGCopy.description}
         <Bullets>
