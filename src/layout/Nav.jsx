@@ -10,7 +10,7 @@ const links = [
   ["FAQ", "faq"],
   // ['Toolkit', 'toolkit'],
   ["About the Opioid Crisis", "about"],
-  ["An Initiative of NY AG Schneiderman", "nyag"],
+  ["An Initiative of the New York AG's Office", "nyag"],
 ];
 
 const Nav = () => (

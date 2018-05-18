@@ -36,7 +36,7 @@ export const faqCopy = {
     {
       question: 'What is Clear Your Cabinet?',
       answer: [
-        'Clear Your Cabinet is an initiative by New York Attorney General Eric Schneiderman to reduce the ' +
+        'Clear Your Cabinet is an initiative of the New York AG’s Office to reduce the ' +
         'amount of unused prescription drugs in New Yorkers’ medicine cabinets. This is a crucial way that we can ' +
         'all help to fight the opioid crisis that is devastating families across New York and our country.',
         'Research shows that a majority of abused prescription drugs are obtained from family and friends, and the source is ' +
@@ -84,9 +84,9 @@ export const resourceCopy = {
 };
 
 export const NYAGCopy = {
-  title1: 'An Initiative of',
-  title2: 'New York Attorney General Eric Schneiderman',
-  description: 'Clear Your Cabinet is the latest initiative of New York Attorney General Eric Schneiderman’s ' +
+  title1: 'An Initiative of The',
+  title2: 'New York AG’s Office,
+  description: 'Clear Your Cabinet is the latest initiative of The New York Attorney General' +
   'comprehensive campaign to address the opioid crisis. Some of the Attorney General’s most significant achievements on behalf of New Yorkers include:',
   // bullets have links - copy is hardcoded in component
 };
