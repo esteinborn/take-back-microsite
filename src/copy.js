@@ -86,7 +86,7 @@ export const resourceCopy = {
 export const NYAGCopy = {
   title1: 'An Initiative of The',
   title2: 'New York AG’s Office',
-  description: 'Clear Your Cabinet is the latest initiative of The New York Attorney General' +
+  description: 'Clear Your Cabinet is the latest initiative of The New York Attorney General’s ' +
   'comprehensive campaign to address the opioid crisis. Some of the Attorney General’s most significant achievements on behalf of New Yorkers include:',
   // bullets have links - copy is hardcoded in component
 };
