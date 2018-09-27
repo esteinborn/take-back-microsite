@@ -22,7 +22,7 @@ const Header = () => (
         </b>
       </div>
     </SectionTitle>
-    <div className="sub-title">The next National Prescription Drug Take Back Day will be in Fall 2018</div>
+    <div className="sub-title">The next National Prescription Drug Take Back Day is on October 27th.</div>
     <Image src={heroImage} />
     <SectionDescription>{headerCopy.description}</SectionDescription>
     <SectionDescription>{headerCopy.description2}</SectionDescription>
