@@ -26,6 +26,7 @@ const Header = () => (
     <Image src={heroImage} />
     <SectionDescription>{headerCopy.description}</SectionDescription>
     <SectionDescription>{headerCopy.description2}</SectionDescription>
+    <SectionDescription>{headerCopy.description3}</SectionDescription>
   </SectionContainerGray>
 );
 

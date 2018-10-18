@@ -13,7 +13,8 @@ const placeholderDescr = 'Description goes here: takeback takeback takeback take
 
 export const headerCopy = {
   description: 'Ready to help out? Search below to find a safe place to get rid of unused medication near you.',
-  description2: 'Click on any site that pops up in your search results to move the map.',
+  description2: 'This list of locations was last updated in March 2018. Make sure to call any listed locations to confirm that drop-offs are accepted.',
+  description3: 'Click on any site that pops up in your search results to move the map.',
 };
 
 // const mapCopy = {

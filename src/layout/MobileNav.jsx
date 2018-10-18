@@ -10,7 +10,7 @@
 //   { text: "FAQ", link: "faq" },
 //   { text: "Toolkit", link: "toolkit" },
 //   { text: "About the Opioid Crisis", link: "about" },
-//   { text: "An Initiative of NY AG Schneiderman", link: "nyag" },
+//   { text: "An Initiative of NY AG", link: "nyag" },
 // ];
 //
 // const generateNavOptions = () => {
